@@ -5,19 +5,19 @@
   
   <title>vCetner安装完后的常规配置 | 尼玛豹哥</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、VM Cluster 配置按下面步骤操作： 二、分布式交换机配置 (DSwitch)按下面步骤操作：  在 DSwitch 上点右键，选择 Add and Manage Hosts... 选择 Add hosts 点击 New hosts... 选择要加入的主机，打上勾 设置上行端口，选择一块网卡，点击 Assgin uplink 勾上 Apply this uplink assignment">
+  <meta name="description" content="一、VM Cluster 配置按下面步骤操作：       二、分布式交换机配置 (DSwitch)按下面步骤操作：  在 DSwitch 上点右键，选择 Add and Manage Hosts... 选择 Add hosts 点击 New hosts... 选择要加入的主机，打上勾 设置上行端口，选择一块网卡，点击 Assgin uplink 勾上 Apply this uplink assi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vCetner安装完后的常规配置">
 <meta property="og:url" content="http://blog.yangxc.com/2021/07/29/about-vcenter/index.html">
 <meta property="og:site_name" content="尼玛豹哥">
-<meta property="og:description" content="一、VM Cluster 配置按下面步骤操作： 二、分布式交换机配置 (DSwitch)按下面步骤操作：  在 DSwitch 上点右键，选择 Add and Manage Hosts... 选择 Add hosts 点击 New hosts... 选择要加入的主机，打上勾 设置上行端口，选择一块网卡，点击 Assgin uplink 勾上 Apply this uplink assignment">
+<meta property="og:description" content="一、VM Cluster 配置按下面步骤操作：       二、分布式交换机配置 (DSwitch)按下面步骤操作：  在 DSwitch 上点右键，选择 Add and Manage Hosts... 选择 Add hosts 点击 New hosts... 选择要加入的主机，打上勾 设置上行端口，选择一块网卡，点击 Assgin uplink 勾上 Apply this uplink assi">
 <meta property="og:locale">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster1.png">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster2.png">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster3.png">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster4.png">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster5.png">
-<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster6.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster1.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster2.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster3.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster4.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster5.png">
+<meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster6.png">
 <meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/dswtich1.png">
 <meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/8dswtich2.png">
 <meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/dswtich3.png">
@@ -33,12 +33,12 @@
 <meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/nfs1.png">
 <meta property="og:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/nfs2.png">
 <meta property="article:published_time" content="2021-07-29T06:44:43.000Z">
-<meta property="article:modified_time" content="2021-07-30T13:55:57.000Z">
+<meta property="article:modified_time" content="2021-07-30T14:10:57.000Z">
 <meta property="article:author" content="YangXC">
 <meta property="article:tag" content="vCenter">
 <meta property="article:tag" content="VMWare">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/about-vcenter/cluster1.png">
+<meta name="twitter:image" content="http://blog.yangxc.com/2021/07/29/about-vcenter/cluster1.png">
   
     <link rel="alternative" href="/atom.xml" title="尼玛豹哥" type="application/atom+xml">
   
@@ -84,7 +84,13 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、VM-Cluster-配置"><a href="#一、VM-Cluster-配置" class="headerlink" title="一、VM Cluster 配置"></a>一、VM Cluster 配置</h2><p>按下面步骤操作：<br><img src="about-vcenter/cluster1.png" alt="add cluster"><br><img src="about-vcenter/cluster2.png" alt="cluster name"><br><img src="about-vcenter/cluster3.png" alt="add hosts"><br><img src="about-vcenter/cluster4.png"><br><img src="about-vcenter/cluster5.png"><br><img src="about-vcenter/cluster6.png" alt="confirm"></p>
+        <h2 id="一、VM-Cluster-配置"><a href="#一、VM-Cluster-配置" class="headerlink" title="一、VM Cluster 配置"></a>一、VM Cluster 配置</h2><p>按下面步骤操作：</p>
+<img src="/2021/07/29/about-vcenter/cluster1.png" class="" title="add cluster">
+<img src="/2021/07/29/about-vcenter/cluster2.png" class="" title="cluster name">
+<img src="/2021/07/29/about-vcenter/cluster3.png" class="" title="add hosts">
+<img src="/2021/07/29/about-vcenter/cluster4.png" class="" title="add cluster">
+<img src="/2021/07/29/about-vcenter/cluster5.png" class="" title="add cluster">
+<img src="/2021/07/29/about-vcenter/cluster6.png" class="" title="confirm">
 <h2 id="二、分布式交换机配置-DSwitch"><a href="#二、分布式交换机配置-DSwitch" class="headerlink" title="二、分布式交换机配置 (DSwitch)"></a>二、分布式交换机配置 (DSwitch)</h2><p>按下面步骤操作：</p>
 <ol>
 <li>在 <code>DSwitch</code> 上点右键，选择 <code>Add and Manage Hosts...</code><br><img src="about-vcenter/dswtich1.png" alt="add and manage hosts"></li>
